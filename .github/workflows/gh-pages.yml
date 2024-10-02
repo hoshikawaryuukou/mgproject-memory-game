@@ -1,10 +1,12 @@
-# 將靜態內容部署到 GitHub Pages 的簡易工作流程
 name: Deploy static content to Pages
 
 on:
-  # 僅在推送到默認分支時運行。
   push:
-    branches: ['main']
+    # branches: ['main']
+    branches: ['release']
+
+  # release:
+  #   types: [published]
 
   # 這個選項可以使你手動在 Action tab 頁面觸發工作流
   workflow_dispatch:
